@@ -30,7 +30,7 @@
 
                     <StackLayout col="2" class="movie-action">
                         <Label class="delete-movie-btn" (tap)="deleteMovie(movie)" text="❌"></Label>
-                        <Label class="watch-next-flag" [class.marked]="movie.toWatchNext" text="🍿"></Label>
+                        <Label class="watch-next-flag" (tap)="toggleMovieWatcNext(movie)" [class.marked]="movie.toWatchNext" text="🍿"></Label>
                     </StackLayout>
                 </GridLayout>
 
