@@ -10,6 +10,13 @@
     </ActionBar>
 
     <StackLayout>
+        <!-- new movie container -->
+        <GridLayout class="new-movie-container" columns="*, auto">
+            <TextField col="0" hint="Titulo do Filme" [(ngModel)]="newMovieTitle"></TextField>
+            <Button col="1" text="+" (tap)="createMovie()"></Button>
+        </GridLayout>
+
+        <!-- movie list -->
         <ListView [items]="movies">
             <ng-template let-movie="item">
 
