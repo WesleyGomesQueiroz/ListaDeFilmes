@@ -19,7 +19,9 @@ TextField {
     color: red;
 }
 
-.rating-picker-container {}
+.rating-picker-container {
+    height: 140;
+}
 
 TextField {
     color: var(--dark-color-four);

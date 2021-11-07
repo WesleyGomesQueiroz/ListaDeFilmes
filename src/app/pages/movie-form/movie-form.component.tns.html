@@ -9,7 +9,10 @@
 
             <TextField hint="Obs" formControlName="obs"></TextField>
 
-            <StackLayout class="rating-picker-container"></StackLayout>
+            <StackLayout class="rating-picker-container">
+                <app-mob-movie-rating-picker class="movie-rating-picker" [form-control]="movieForm.get('rating')" [movie-rating-options]="movieRatingOptions">
+                </app-mob-movie-rating-picker>
+            </StackLayout>
 
             <GridLayout colunms="auto, *" class="rating-next-switc-container">
                 <label col="0" text="Quero Assistir 🍿"></label>
